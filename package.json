@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/isaacruiz0/DoToday/issues"
   },
-  "homepage": "https://github.com/isaacruiz0/DoToday#readme"
+  "homepage": "https://github.com/isaacruiz0/DoToday#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
 }
