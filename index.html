@@ -12,12 +12,14 @@
 </head>
 <body>
     <h1>Do Today</h1> 
-    <div class="addToList">
-        <input type="text" id="addItemInput" placeholder="Add todo">
-        <i class="fa-regular fa-square-plus"></i>
-    </div>
+    <form>
+        <input type="text" id="addItemInput" autocomplete="off" placeholder="Add todo">
+        <button type="submit">
+            <i class="fa-regular fa-square-plus"></i>
+        </button>
+    </form>
     <main>
-        
+        <ul></ul>
     </main>
 
     <script src="./app.js"></script>

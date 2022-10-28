@@ -5,8 +5,12 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background-color: #232937;
   font-family: "Montserrat", sans-serif;
@@ -21,14 +25,14 @@ body h1 {
   font-size: 5rem;
   letter-spacing: 0.125rem;
 }
-body .addToList {
+body form {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   width: 100%;
 }
-body .addToList input[type=text] {
+body form input[type=text] {
   background-color: transparent;
   border: none;
   border-bottom: #32ae85 2px solid;
@@ -37,16 +41,54 @@ body .addToList input[type=text] {
   font-size: 1.65rem;
   color: #e4f0fb;
 }
-body .addToList input[type=text]:focus {
+body form input[type=text]:focus {
   outline: none;
   box-shadow: none;
 }
-body .addToList i {
+body form button {
+  background-color: transparent;
+  border: none;
+}
+body form button i {
   color: #e4f0fb;
   font-size: 2.5rem;
   cursor: pointer;
-  transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.2s;
 }
-body .addToList i:hover {
+body form button i:hover {
   color: #32ae85;
+}
+body main {
+  padding-top: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main ul {
+  width: 50%;
+  gap: 1rem;
+  color: #e4f0fb;
+  text-decoration: none;
+  list-style-type: none;
+}
+body main ul li {
+  margin: 20px 0;
+  transition: ease-in-out 0.35s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 1.75rem;
+}
+body main ul li span {
+  transition: ease-in-out 0.35s;
+}
+body main ul li button {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: none;
+  transition: ease-in-out 0.35s;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
