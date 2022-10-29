@@ -25,6 +25,11 @@ body h1 {
   font-size: 5rem;
   letter-spacing: 0.125rem;
 }
+@media screen and (max-width: 415px) {
+  body h1 {
+    font-size: 2.8rem;
+  }
+}
 body form {
   display: flex;
   justify-content: center;
@@ -45,6 +50,12 @@ body form input[type=text]:focus {
   outline: none;
   box-shadow: none;
 }
+@media screen and (max-width: 415px) {
+  body form input[type=text] {
+    width: 75%;
+    font-size: 1.5rem;
+  }
+}
 body form button {
   background-color: transparent;
   border: none;
@@ -57,6 +68,11 @@ body form button i {
 }
 body form button i:hover {
   color: #32ae85;
+}
+@media screen and (max-width: 415px) {
+  body form button i {
+    font-size: 2rem;
+  }
 }
 body main {
   padding-top: 5%;
@@ -71,6 +87,12 @@ body main ul {
   color: #e4f0fb;
   text-decoration: none;
   list-style-type: none;
+  white-space: wrap;
+}
+@media screen and (max-width: 415px) {
+  body main ul {
+    width: 85%;
+  }
 }
 body main ul li {
   margin: 20px 0;
@@ -81,8 +103,16 @@ body main ul li {
   cursor: pointer;
   font-size: 1.75rem;
 }
+@media screen and (max-width: 415px) {
+  body main ul li {
+    font-size: 1.25rem;
+  }
+}
 body main ul li span {
+  max-width: 100%;
   transition: ease-in-out 0.35s;
+  display: flex;
+  flex-wrap: wrap;
 }
 body main ul li button {
   height: 1rem;
@@ -91,4 +121,10 @@ body main ul li button {
   border: none;
   transition: ease-in-out 0.35s;
   cursor: pointer;
+}
+@media screen and (max-width: 415px) {
+  body main ul li button {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
