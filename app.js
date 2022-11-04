@@ -6,8 +6,13 @@ console.log(clearItems)
 
 const handleClearItems = () => {
     // This grabs all the items we will be looping through
-    let items = document.querySelector('li');
-    console.log(items)
+    let liItems = document.querySelectorAll('li')
+
+    for (let i = 0; i < liItems.length; i++){
+        if (liItems[i].style.textDecoration === "line-through"){
+            liItems[i].remove()
+        }
+    }
 }
 // This will remove all items that have been completed
 clearItems.addEventListener('click',handleClearItems)
