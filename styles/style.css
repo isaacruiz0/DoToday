@@ -25,6 +25,11 @@ body .clearContainer {
   background-color: transparent;
   padding: 3.5%;
 }
+@media screen and (max-width: 450px) {
+  body .clearContainer {
+    padding: 10% 3.5%;
+  }
+}
 body .clearContainer .clearFinishedTasks {
   background-color: transparent;
   border: solid 2px #e4f0fb;
@@ -37,9 +42,11 @@ body .clearContainer .clearFinishedTasks {
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
-body .clearContainer .clearFinishedTasks:hover {
-  color: #32ae85;
-  border: solid 2px currentColor;
+@media screen and (min-width: 700px) {
+  body .clearContainer .clearFinishedTasks:hover {
+    color: #32ae85;
+    border: solid 2px currentColor;
+  }
 }
 @media screen and (max-width: 415px) {
   body .clearContainer .clearFinishedTasks {
@@ -90,8 +97,10 @@ body form button i {
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
-body form button i:hover {
-  color: #32ae85;
+@media screen and (min-width: 700px) {
+  body form button i:hover {
+    color: #32ae85;
+  }
 }
 @media screen and (max-width: 415px) {
   body form button i {
