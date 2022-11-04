@@ -22,15 +22,33 @@ body{
     flex-direction: column;
     align-items: center;
 
-    h1{
-        color: $secondary-text-color;
-        text-align: left;
-        padding: 2% 0 5%;
-        font-size: 5rem;
-        letter-spacing: .125rem;
-        @media screen and (max-width: 415px){
-            font-size: 2.8rem;
-            padding: 7% 7% 0;
+   .clearContainer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: transparent;
+        padding: 3.5%;
+
+        .clearFinishedTasks{
+            background-color: transparent;
+            border: solid 2px $primary-text-color;
+            padding: 1rem;
+            color: $primary-text-color;
+            font-size: 1.3rem;
+            letter-spacing: .1rem;
+            border-radius: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: ease-in-out .2s;
+    
+    
+            &:hover{
+                color: $secondary-text-color;
+                border: solid 2px currentColor;
+            }
+            @media screen and (max-width: 415px){
+                font-size: 1.25rem;
+            }
         }
     }
     form{
@@ -139,4 +157,5 @@ body{
             }
         }
     }
+ 
 }
