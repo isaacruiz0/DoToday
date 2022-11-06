@@ -51,9 +51,13 @@ const handleSubmitForm = (e) => {
     e.preventDefault();
     // This gets the value of the input
     let addItemInput = document.querySelector('#addItemInput').value;
+    // This capitalizes the first letter of thes sentences before appending it the list
+    const firstLetter = addItemInput.charAt(0).toUpperCase();
+    const afterFirstLetter = addItemInput.substring(1)
+    const inputCapitalLetter = firstLetter + afterFirstLetter
     // If the input is not blank then it will be added and displayed
-    if (addItemInput !== ''){
-        addTodo(addItemInput);
+    if (inputCapitalLetter !== ''){
+        addTodo(inputCapitalLetter);
     }
     // This resets the input to blank when after submitted
     addItemForm.reset()
