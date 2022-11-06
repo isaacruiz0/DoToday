@@ -1,8 +1,11 @@
 let addItemForm = document.querySelector('form');
 let clearItems = document.querySelector('.clearFinishedTasks');
+let h1Title = document.querySelector('h1')
+let ulItems = document.querySelector('ul')
+let clearItemsContainer = document.querySelector('.clearContainer')
 
-
-console.log(clearItems)
+console.log(ulItems.children.length)
+console.log(h1Title)
 
 const handleClearItems = () => {
     // This grabs all the items we will be looping through
@@ -49,6 +52,8 @@ function addTodo(todo) {
 // This will handle what happens after text is submitted
 const handleSubmitForm = (e) => {
     e.preventDefault();
+    h1Title.style.display = 'none'
+    clearItemsContainer.style.display = 'flex'
     // This gets the value of the input
     let addItemInput = document.querySelector('#addItemInput').value;
     // This capitalizes the first letter of thes sentences before appending it the list
