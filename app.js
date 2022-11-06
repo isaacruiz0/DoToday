@@ -52,6 +52,7 @@ function addTodo(todo) {
 // This will handle what happens after text is submitted
 const handleSubmitForm = (e) => {
     e.preventDefault();
+    window.scrollTo(0, 0);
     h1Title.style.display = 'none'
     clearItemsContainer.style.display = 'flex'
     // This gets the value of the input
