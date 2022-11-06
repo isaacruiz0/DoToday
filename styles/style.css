@@ -103,7 +103,7 @@ body form {
   }
 }
 body form input[type=text] {
-  background-color: transparent;
+  background-color: #232937;
   border: none;
   border-bottom: #32ae85 2px solid;
   width: 35%;

@@ -90,7 +90,7 @@ body{
             padding: 1rem 0 4rem;
         }
         input[type="text"]{
-            background-color: transparent;
+            background-color: $background-color;
             border: none;
             border-bottom: $secondary-text-color 2px solid;
 
